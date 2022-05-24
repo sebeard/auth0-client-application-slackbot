@@ -1,0 +1,12 @@
+{
+  "name": "demo-engineering-api",
+  "version": "1.0.0",
+  "description": "An API for managing client applications in an Auth0 tenant",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
