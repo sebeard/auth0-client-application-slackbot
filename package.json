@@ -8,5 +8,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
 }
