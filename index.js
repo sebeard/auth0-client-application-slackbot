@@ -1,6 +1,5 @@
 //External Libs
 require('dotenv').config()
-const { App } = require('@slack/bolt');
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request-promise')
