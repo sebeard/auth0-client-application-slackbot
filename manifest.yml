@@ -1,0 +1,41 @@
+display_information:
+  name: Demo Engineering
+  description: Provides the ability to create, read, update and delete
+  background_color: "#790296"
+features:
+  bot_user:
+    display_name: Demo Engineering
+    always_online: true
+  slash_commands:
+    - command: /create-client-app
+      url: https://c345-188-74-79-133.eu.ngrok.io/create-client
+      description: Create Demo Application
+      usage_hint: "[applicationName]"
+      should_escape: false
+    - command: /read-client-app
+      url: https://c345-188-74-79-133.eu.ngrok.io/get-client
+      description: Reads information on the referenced application
+      usage_hint: "[applicationId]"
+      should_escape: false
+    - command: /list-client-apps
+      url: https://c345-188-74-79-133.eu.ngrok.io/list-clients
+      description: Lists all client applications of a tenant
+      should_escape: false
+    - command: /delete-client-app
+      url: https://c345-188-74-79-133.eu.ngrok.io/delete-client
+      description: Deletes a specified client application
+      usage_hint: "[applicationId]"
+      should_escape: false
+    - command: /update-client-app
+      url: https://c345-188-74-79-133.eu.ngrok.io/update-client
+      description: Updates a Clients name and description
+      usage_hint: "[applicationId] [newName] [newDescription]"
+      should_escape: false
+oauth_config:
+  scopes:
+    bot:
+      - commands
+settings:
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
